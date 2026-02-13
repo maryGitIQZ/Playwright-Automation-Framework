@@ -14,15 +14,16 @@ import { json } from 'stream/consumers';
  */
 export default defineConfig({
   testDir: './tests',
-  workers:1,
+  workers: process.env.CI ? 1 : undefined,
+  retries: process.env.CI ? 2 : 0,
   /* Run tests in files in parallel */
   //fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
+ // forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  
   /* Opt out of parallel tests on CI. */
-  /*workers: process.env.CI ? 1 : undefined,
+  
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html'],
@@ -32,7 +33,7 @@ export default defineConfig({
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: process.env.CI ? true : false,
+    headless: !!process.env.CI,
     screenshot: 'only-on-failure',
     video : 'retain-on-failure',
 
@@ -46,14 +47,9 @@ export default defineConfig({
       name: 'Desktop-Regression Get In Touch Test Cases',
       testDir:'./tests/desktop',
       use: {
-        browserName:'chromium',
-        viewport:null,
-         launchOptions: process.env.CI
-         ? {}
-         :{
-          args:['--start-maximized'],
-          slowMo: 800,
-         } },
+        ...devices['Desktop Chrome'],
+       viewport:{width:1280, height:720},
+      },  
     },
 
     
