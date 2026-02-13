@@ -16,7 +16,7 @@ export default defineConfig({
   testDir: './tests',
   workers:1,
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  //fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -48,7 +48,9 @@ export default defineConfig({
       use: {
         browserName:'chromium',
         viewport:null,
-         launchOptions: {
+         launchOptions: process.env.CI
+         ? {}
+         :{
           args:['--start-maximized'],
           slowMo: 800,
          } },

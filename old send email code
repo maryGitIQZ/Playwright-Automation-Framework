@@ -80,3 +80,16 @@ exec("npx playwright test", (error) => {
 });
 
 
+ projects: [
+    {
+      name: 'Desktop-Regression Get In Touch Test Cases',
+      testDir:'./tests/desktop',
+      use: {
+        browserName:'chromium',
+        viewport:null,
+         launchOptions: {
+          args:['--start-maximized'],
+          slowMo: 800,
+         } },
+    },
+  ]
