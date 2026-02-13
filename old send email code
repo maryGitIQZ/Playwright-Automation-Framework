@@ -26,7 +26,7 @@ async function sendEmail(status: "PASS" | "FAIL") {
     service: "gmail",
     auth: {
       user: "campntest25@gmail.com",
-      pass: "zpal tpuw ejyc ebfo" // Gmail App Password
+      pass: "123" // Gmail App Password
     }
   });
 
