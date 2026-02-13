@@ -1,6 +1,8 @@
 import { exec } from "child_process";
 import nodemailer from "nodemailer";
 import * as fs from "fs";
+import dotenv from "dotenv";
+dotenv.config();
 
 // -----------------------------
 // Interface for Playwright JSON

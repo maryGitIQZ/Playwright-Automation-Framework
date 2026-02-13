@@ -1,0 +1,502 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\playwright.config.ts",
+    "rootDir": "C:/Users/mary.d/Desktop/Dynamic Web/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/mary.d/Desktop/Dynamic Web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "Desktop-Regression Get In Touch Test Cases",
+        "name": "Desktop-Regression Get In Touch Test Cases",
+        "testDir": "C:/Users/mary.d/Desktop/Dynamic Web/tests/desktop",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/mary.d/Desktop/Dynamic Web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "Mobile-Regression Get In Touch Test Cases",
+        "name": "Mobile-Regression Get In Touch Test Cases",
+        "testDir": "C:/Users/mary.d/Desktop/Dynamic Web/tests/mobile",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "desktop\\getInTouchClear.spec.ts",
+      "file": "desktop/getInTouchClear.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get In Touch – Clear button should Reset all fields",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "Test Case",
+                  "description": "Validate Clear button functionality"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "Desktop-Regression Get In Touch Test Cases",
+              "projectName": "Desktop-Regression Get In Touch Test Cases",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 35089,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "GIVEN User is on the Home page and navigates to Get In Touch Popup.",
+                      "duration": 27236
+                    },
+                    {
+                      "title": "WHEN User enters valid details on the required fields and Clicks Clear button.",
+                      "duration": 880
+                    },
+                    {
+                      "title": "THEN System should clear the values entered on the fields ",
+                      "duration": 147
+                    }
+                  ],
+                  "startTime": "2026-02-13T12:30:16.167Z",
+                  "annotations": [
+                    {
+                      "type": "Test Case",
+                      "description": "Validate Clear button functionality"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkdldCBJbiBUb3VjaCJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJTdWNjZXNzZnVsIENsZWFyIEFjdGlvbiJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InNldmVyaXR5IiwidmFsdWUiOiJOb3JtYWwifV19fQ=="
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiXG4gICAgICAgIFNjZW5hcmlvOiBUbyB2ZXJpZnkgdGhlIENsZWFyIGJ1dHRvbiBmdW5jdGlvbmFsaXR5XG4gICAgICAgIEdJVkVOXG4gICAgICAgIFVzZXIgaXMgb24gdGhlIEhvbWUgcGFnZSBhbmQgTmF2aWdhdGVzIHRvIEdldCBJbiB0b3VjaCBQb3B1cC5cbiAgICAgICAgV0hFTlxuICAgICAgICBVc2VyIGVudGVycyB2YWxpZCBkZXRhaWxzIG9uIHRoZSByZXF1aXJlZCBmaWVsZHMgXG4gICAgICAgIEFORCBcbiAgICAgICAgQ2xpY2tzIENsZWFyIGJ1dHRvblxuICAgICAgICBUSEVOIFN5c3RlbSBzaG91bGQgY2xlYXIgdGhlIHZhbHVlcyBlbnRlcmVkIG9uIHRoZSBmaWVsZHMuXG4gICAgICAgICJ9fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "12219a924f3a7a5070ed-b1fc22c38d39e1f3ea7b",
+          "file": "desktop/getInTouchClear.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "desktop\\getInTouchNegative.spec.ts",
+      "file": "desktop/getInTouchNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get In Touch – Mandatory validation Error Messages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "Test Case",
+                  "description": "Verify Error Messages when submitting empty Get In Touch form"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "Desktop-Regression Get In Touch Test Cases",
+              "projectName": "Desktop-Regression Get In Touch Test Cases",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 34181,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "GIVEN User is on the Home Page",
+                      "duration": 2914
+                    },
+                    {
+                      "title": "WHEN User opens the Get In Touch Popup",
+                      "duration": 971
+                    },
+                    {
+                      "title": " AND Submit the form wihout enterig the data",
+                      "duration": 388
+                    },
+                    {
+                      "title": "THEN System should display appropriate error messages on the respective fields",
+                      "duration": 807
+                    }
+                  ],
+                  "startTime": "2026-02-13T12:30:16.163Z",
+                  "annotations": [
+                    {
+                      "type": "Test Case",
+                      "description": "Verify Error Messages when submitting empty Get In Touch form"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkdldCBJbiBUb3VjaCJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJNYW5kYXRvcnkgRmllbGRzIFZhbGlkaW9uIn1dfX0="
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InNldmVyaXR5IiwidmFsdWUiOiJOb3JtYWwifV19fQ=="
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiXG4gICAgICAgIFNjZW5hcmlvOiBUbyBWZXJpZnkgTWFuZGF0b3J5IFZhbGlkdGlvbiBlcnJvciBtZXNzYWdlc1xuICAgICAgICBHSVZFTlxuICAgICAgICBVc2VyIG9wZW5zIEdldGludG91Y2ggcG9wdXBcbiAgICAgICAgV0hFTlxuICAgICAgICBVc2VyIGRvZXMgbm90IGVudGVyIGFueSB2YWx1ZXMgb24gdGhlIHJlcXVpcmVkIGZpZWxkc1xuICAgICAgICBBTkRcbiAgICAgICAgQ2xpY2tzIFN1Ym1pdCBidXR0b25cbiAgICAgICAgVEhFTlxuICAgICAgICBTeXN0ZW0gc2hvdWxkIGRpc3BsYXkgTWFuZGF0b3J5IHZhbGlkYXRpb24gZXJyb3IgbWVzc2FnZXMgb24gdGhlIHJlc3BlY3RpdmUgZmllbGRzLlxuICAgICAgICAifX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e86fe1eac59e2827592b-be540f1c6d0e7704da1e",
+          "file": "desktop/getInTouchNegative.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "desktop\\getInTouchPositive.spec.ts",
+      "file": "desktop/getInTouchPositive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get In Touch – Submit form with valid data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\tests\\desktop\\getInTouchPositive.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "Desktop-Regression Get In Touch Test Cases",
+              "projectName": "Desktop-Regression Get In Touch Test Cases",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:30:14.144Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\tests\\desktop\\getInTouchPositive.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "3059db90bd3f7c949b60-d96a2b691d1a48efe21f",
+          "file": "desktop/getInTouchPositive.spec.ts",
+          "line": 6,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "mobile\\getInTouchMobileClear.spec.ts",
+      "file": "mobile/getInTouchMobileClear.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get In Touch-Verify Clear Button Functionality",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile-Regression Get In Touch Test Cases",
+              "projectName": "Mobile-Regression Get In Touch Test Cases",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 27374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:30:16.147Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7c8d4e33444ef8499a93-e629a0422ecc34891d57",
+          "file": "mobile/getInTouchMobileClear.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "mobile\\getInTouchMobileError.spec.ts",
+      "file": "mobile/getInTouchMobileError.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get In Touch -Verify Mandatory Validation Error Message",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile-Regression Get In Touch Test Cases",
+              "projectName": "Mobile-Regression Get In Touch Test Cases",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 34499,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:30:16.185Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\test-results\\getInTouchMobileError-Get--5a32d-ry-Validation-Error-Message-Mobile-Regression-Get-In-Touch-Test-Cases\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\test-results\\getInTouchMobileError-Get--5a32d-ry-Validation-Error-Message-Mobile-Regression-Get-In-Touch-Test-Cases\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\test-results\\getInTouchMobileError-Get--5a32d-ry-Validation-Error-Message-Mobile-Regression-Get-In-Touch-Test-Cases\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed8b5e71ab607189594c-3c3bcc737cd8085e9229",
+          "file": "mobile/getInTouchMobileError.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "mobile\\getInTouchMobileSubmit.spec.ts",
+      "file": "mobile/getInTouchMobileSubmit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Get In Touch Submit -Verify Successful Submit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\tests\\mobile\\getInTouchMobileSubmit.spec.ts",
+                    "line": 6,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "Mobile-Regression Get In Touch Test Cases",
+              "projectName": "Mobile-Regression Get In Touch Test Cases",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-13T12:30:44.553Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\mary.d\\Desktop\\Dynamic Web\\tests\\mobile\\getInTouchMobileSubmit.spec.ts",
+                        "line": 6,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4a06a2e39a56074e957a-367b524cb806cf7499ba",
+          "file": "mobile/getInTouchMobileSubmit.spec.ts",
+          "line": 6,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-13T12:30:14.097Z",
+    "duration": 38565.616,
+    "expected": 3,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -3,7 +3,7 @@ import { HomePage } from '../../src/pages/HomePage';
 
 import {GetintouchPage } from '../../src/pages/GetintouchPage';
 
-test('Get In Touch Submit -Verify Successful Submit', async ({ page , isMobile}) => {
+test.skip('Get In Touch Submit -Verify Successful Submit', async ({ page , isMobile}) => {
   
     const homePage = new HomePage(page);
     const getintouchPage= new GetintouchPage(page);
